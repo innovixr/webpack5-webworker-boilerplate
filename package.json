@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "build/application.js",
+    "build": "npx webpack --config config/webpack.config.js",
     "start": "webpack-dev-server --config config/webpack.prod.js --open --env NODE_ENV=dev",
     "start-https": "webpack-dev-server --config config/webpack.prod.js --open --env NODE_ENV=dev --env NODE_SSL=true"
   },
