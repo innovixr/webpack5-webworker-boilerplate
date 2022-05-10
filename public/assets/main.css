@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Verdana", Courier, monospace;
+    color: var(--dark-colour);
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    background-color: rgb(53, 53, 53);
+    overflow: hidden;
+    padding: 20px;
+    color: white;
+}
+
+#github-link-menu {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 50px;
+    background-color: rgb(23, 23, 23);
+}
+
+#github-link-menu img {
+    position: absolute;
+    height: 30px;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(23, 23, 23);
+}
+
+#messages {
+    margin: 10px;
+    padding-left: 10px;
+    border: 1px solid white;
+    height: 40px;
+    line-height: 40px;
+}

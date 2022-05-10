@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>webpack5 webworker boilerplate</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="/assets/main.css" />
+</head>
+
+<body>
+    <a id="github-link-menu" href="https://github.com/innovixr/pixi-gui" target="_blank"><img id="menu-icon"
+            src="/assets/github-white-icon.png"></a>
+
+    Messages sent by the worker at regular interval:
+    <div id="messages"></div>
+
+    <script type="module">
+
+        const div = document.querySelector( '#messages' );
+
+        import * as Application from './application-module.js';
+
+        const myWorker = new Application.WorkerServer( {
+            file: '/assets/application-worker.js'
+        } );
+
+        myWorker.onMessage = ev =>
+        {
+            div.innerText = ev.data;
+        }
+        /*
+        setInterval( () =>
+        {
+            myWorker.postMessage( 'test' );
+        }, 1000 );
+        */
+
+    </script>
+
+</body>
+
+</html>

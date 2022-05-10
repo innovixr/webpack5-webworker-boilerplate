@@ -1,0 +1,33 @@
+{
+  "name": "webpack5-webworker-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate for webpack5 and code organization with webworkers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "build/application.js",
+    "start": "webpack-dev-server --config config/webpack.prod.js --open --env NODE_ENV=dev",
+    "start-https": "webpack-dev-server --config config/webpack.prod.js --open --env NODE_ENV=dev --env NODE_SSL=true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/innovixr/webpack5-webworker-boilerplate.git"
+  },
+  "keywords": [
+    "webpack5",
+    "webpack",
+    "webworker",
+    "webworkers"
+  ],
+  "author": "eviltik <eviltik@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/innovixr/webpack5-webworker-boilerplate/issues"
+  },
+  "homepage": "https://github.com/innovixr/webpack5-webworker-boilerplate#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.9.0"
+  }
+}
